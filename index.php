@@ -1,8 +1,9 @@
 <?php
-include 'header.php';
+// include 'header.php';
+include 'home.php';
 ?>
-<br>
+<!-- <br> -->
 <?php
-include 'pil_gejala.php';
-include 'footer.php';
+// include 'pil_gejala.php';
+// include 'footer.php';
  ?>
