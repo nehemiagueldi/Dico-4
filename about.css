@@ -1,0 +1,139 @@
+@media only screen and (min-width: 1115px) {
+    /* For mobile phones: */
+    .tittle{
+        height: 100vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        font-size: 4rem;
+    }
+  }
+
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.img{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position:bottom right;
+}
+
+.tittle{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0em 1em;
+}
+
+.tittle-container{
+    position: relative;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap: 5mm;
+    padding: 5mm;
+}
+
+.content1-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1-1 h2{
+    text-align: center;
+}
+
+.content1-1 p{
+    text-align: justify;
+}
+
+.content1-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10mm;
+}
+
+.subcontent{
+    width: 40%;
+    display: block;
+}
+
+.subcontent p{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.subcontent h4{
+    text-align: center;
+}
+
+.img-content{
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.img-wrapper{
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10em;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    margin-inline: auto;
+}
+
+.content-2{
+    background-color: #13c5dd;
+}
+
+.content2-title{
+    margin-top: 2em;
+    padding-top: 1em;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.content2-ket{
+    justify-content: center;
+    text-align: center;
+}
+
+.subcontent-2{
+    display: inline-block;
+    width: 15%;
+}
+
+.content2-2{
+    margin-top: 10mm;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subcontent-2 p{
+    text-align: justify;
+}
+
+.subcontent-2 h4{
+    text-align: center;
+}
