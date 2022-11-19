@@ -81,7 +81,7 @@
                <div class="navbar-nav ms-auto py-0">
                   <a href="" class="nav-item nav-link active">Home</a>
                   <a href="aboutus.php" class="nav-item nav-link">About Us</a>
-                  <a href="home.php" class="nav-item nav-link">Covid-19 Diagnosis</a>
+                  <a href="pil_gejala.php" class="nav-item nav-link">Covid-19 Diagnosis</a>
                   <!-- <a href="" class="nav-item nav-link">Service</a>
                   <a href="" class="nav-item nav-link">Pricing</a> -->
                   <!-- <div class="nav-item dropdown">
@@ -113,7 +113,7 @@
                <h1 class="display-1 text-white mb-md-4">Together We Fight COVID-19</h1>
                <div class="pt-2">
                   <a href="aboutus.php" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">About Us</a>
-                  <a href="" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Covid-19 Diagnosis</a>
+                  <a href="pil_gejala.php" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Covid-19 Diagnosis</a>
                </div>
             </div>
          </div>
