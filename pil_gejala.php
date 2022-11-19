@@ -60,7 +60,7 @@
     		    <input type="checkbox" aria-label="Checkbox for following text input" value="<?=$d['kode']?>" name="<?=$d['id']?>">
     		</div>
   		</div>
-			<input type="text" class="form-control" aria-label="Text input with checkbox" value="<?=$d['gejala']?>">
+			<input type="text" class="form-control" aria-label="Text input with checkbox" value="<?=$d['gejala']?>"readonly>
 	</div>
     <?php
 	//stop perulangan!
