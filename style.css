@@ -97,8 +97,10 @@
 }
 
 .hero-header {
-  background: url(img/hero.jpg) top right no-repeat;
+  background: url(img/aboutBekgron.png) top right no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 .service-item {
@@ -137,6 +139,25 @@
   opacity: 1;
 }
 
+.img-prevention{
+  width: 400px;
+  height: 235px;
+}
+
+.img-team{
+  width: 500px;
+  height: 500px;
+}
+
+.logo-about{
+  transition: .3s;
+}
+
+.logo-about:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .price-carousel::after {
   position: absolute;
   content: "";
@@ -145,7 +166,7 @@
   bottom: 0;
   left: 0;
   background: var(--primary);
-  border-radius: 8px 8px 50% 50%;
+  border-radius: 15px 15px 60% 60%;
   z-index: -1;
 }
 

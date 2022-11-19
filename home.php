@@ -32,7 +32,7 @@
 
 <body>
    <!-- Topbar Start -->
-   <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+   <!-- <div class="container-fluid py-2 border-bottom d-none d-lg-block">
       <div class="container">
          <div class="row">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
@@ -63,7 +63,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- Topbar End -->
 
 
@@ -72,7 +72,7 @@
       <div class="container">
          <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
             <a href="" class="navbar-brand">
-               <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>Medinova</h1>
+               <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>DICO-4</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                <span class="navbar-toggler-icon"></span>
@@ -80,10 +80,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                <div class="navbar-nav ms-auto py-0">
                   <a href="" class="nav-item nav-link active">Home</a>
-                  <a href="" class="nav-item nav-link">About</a>
-                  <a href="" class="nav-item nav-link">Service</a>
-                  <a href="" class="nav-item nav-link">Pricing</a>
-                  <div class="nav-item dropdown">
+                  <a href="aboutus.php" class="nav-item nav-link">About Us</a>
+                  <a href="home.php" class="nav-item nav-link">Covid-19 Diagnosis</a>
+                  <!-- <a href="" class="nav-item nav-link">Service</a>
+                  <a href="" class="nav-item nav-link">Pricing</a> -->
+                  <!-- <div class="nav-item dropdown">
                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                      <div class="dropdown-menu m-0">
                         <a href="" class="dropdown-item">Blog Grid</a>
@@ -94,7 +95,7 @@
                         <a href="" class="dropdown-item">Search</a>
                      </div>
                   </div>
-                  <a href="" class="nav-item nav-link">Contact</a>
+                  <a href="" class="nav-item nav-link">Contact</a> -->
                </div>
             </div>
          </nav>
@@ -108,11 +109,11 @@
       <div class="container py-5">
          <div class="row justify-content-start">
             <div class="col-lg-8 text-center text-lg-start">
-               <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important;">Welcome To Medinova</h5>
-               <h1 class="display-1 text-white mb-md-4">Best Healthcare Solution In Your City</h1>
+               <h5 class="d-inline-block text-black-50 text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .5) !important;">Welcome To DICO-4</h5>
+               <h1 class="display-1 text-white mb-md-4">Together We Fight COVID-19</h1>
                <div class="pt-2">
-                  <a href="" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Find Doctor</a>
-                  <a href="" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Appointment</a>
+                  <a href="aboutus.php" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">About Us</a>
+                  <a href="" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Covid-19 Diagnosis</a>
                </div>
             </div>
          </div>
@@ -133,31 +134,31 @@
             <div class="col-lg-7">
                <div class="mb-4">
                   <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-                  <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
+                  <h1 class="display-4">About COVID-19 and The Spread</h1>
                </div>
-               <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+               <p>Coronavirus disease is an infectious disease caused by a new virus. This disease attacks respiratory people like the flu with symptoms such as coughing, fever, and so on, even shortness of breath. You can be infected by breathing in the virus if you are near someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth. The virus spreads more easily indoors and in crowded settings.</p>
                <div class="row g-3 pt-3">
                   <div class="col-sm-3 col-6">
                      <div class="bg-light text-center rounded-circle py-4">
-                        <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
+                        <i class="fa fa-3x fa-user-md text-primary mb-3 logo-about"></i>
                         <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
                      </div>
                   </div>
                   <div class="col-sm-3 col-6">
                      <div class="bg-light text-center rounded-circle py-4">
-                        <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
+                        <i class="fa fa-3x fa-procedures text-primary mb-3 logo-about"></i>
                         <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
                      </div>
                   </div>
                   <div class="col-sm-3 col-6">
                      <div class="bg-light text-center rounded-circle py-4">
-                        <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
+                        <i class="fa fa-3x fa-microscope text-primary mb-3 logo-about"></i>
                         <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
                      </div>
                   </div>
                   <div class="col-sm-3 col-6">
                      <div class="bg-light text-center rounded-circle py-4">
-                        <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
+                        <i class="fa fa-3x fa-ambulance text-primary mb-3 logo-about"></i>
                         <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
                      </div>
                   </div>
@@ -169,22 +170,23 @@
    <!-- About End -->
 
 
-   <!-- Services Start -->
+   <!-- Spread Start -->
    <div class="container-fluid py-5">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Services</h5>
-            <h1 class="display-4">Excellent Medical Services</h1>
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">The Spread</h5>
+            <h1 class="display-4">COVID-19 Spread</h1>
          </div>
          <div class="row g-5">
             <div class="col-lg-4 col-md-6">
                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                   <div class="service-icon mb-4">
-                     <i class="fa fa-2x fa-user-md text-white"></i>
+                     <i class="fa fa-2x fa-regular fa-biohazard text-white"></i>
+                     <!-- <img class="text-white" src="../Expert-uas-web/img/contaminated.png"/> -->
                   </div>
-                  <h4 class="mb-3">Emergency Care</h4>
-                  <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                  <a class="btn btn-lg btn-primary rounded-pill" href="">
+                  <h4 class="mb-3">Contaminated Objects</h4>
+                  <p class="m-0">A person can get COVID-19 by touching a surface or object that has the virus on it and then touching their mouth or nose.</p>
+                  <a class="btn btn-lg btn-primary rounded-pill" href="https://www.healthline.com/health/disease-transmission#indirect-contact" target="_blank">
                      <i class="bi bi-arrow-right"></i>
                   </a>
                </div>
@@ -192,11 +194,11 @@
             <div class="col-lg-4 col-md-6">
                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                   <div class="service-icon mb-4">
-                     <i class="fa fa-2x fa-procedures text-white"></i>
+                     <i class="fa fa-2x fa-duotone fa-wind text-white"></i>
                   </div>
-                  <h4 class="mb-3">Operation & Surgery</h4>
-                  <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                  <a class="btn btn-lg btn-primary rounded-pill" href="">
+                  <h4 class="mb-3">Air Transmission</h4>
+                  <p class="m-0">The COVID-19 virus can spread through the air because a person infected with COVID-19 coughs or sneezes and is then inhaled by those closest to them.</p>
+                  <a class="btn btn-lg btn-primary rounded-pill" href="https://www.webmd.com/lung/what-are-airborne-diseases" target="_blank">
                      <i class="bi bi-arrow-right"></i>
                   </a>
                </div>
@@ -204,11 +206,11 @@
             <div class="col-lg-4 col-md-6">
                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                   <div class="service-icon mb-4">
-                     <i class="fa fa-2x fa-stethoscope text-white"></i>
+                     <i class="fa fa-2x fa-solid fa-handshake text-white"></i>
                   </div>
-                  <h4 class="mb-3">Outdoor Checkup</h4>
-                  <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                  <a class="btn btn-lg btn-primary rounded-pill" href="">
+                  <h4 class="mb-3">Human-to-Human Transmission</h4>
+                  <p class="m-0">Similar to air transmission, a person can contract the COVID-19 virus due to direct contact or contact with a person who has contracted COVID-19.</p>
+                  <a class="btn btn-lg btn-primary rounded-pill" href="https://www.statnews.com/2020/01/21/who-raises-possibility-of-sustained-human-to-human-transmission-of-new-virus-in-china/" target="_blank">
                      <i class="bi bi-arrow-right"></i>
                   </a>
                </div>
@@ -216,11 +218,11 @@
             <div class="col-lg-4 col-md-6">
                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                   <div class="service-icon mb-4">
-                     <i class="fa fa-2x fa-ambulance text-white"></i>
+                     <i class="fa fa-2x fa-solid fa-dragon text-white"></i>
                   </div>
-                  <h4 class="mb-3">Ambulance Service</h4>
-                  <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                  <a class="btn btn-lg btn-primary rounded-pill" href="">
+                  <h4 class="mb-3">Animal Transmission</h4>
+                  <p class="m-0">The COVID-19 virus can also spread through infected animals. This is as reported by the initial occurrence of COVID-19 which originated from mules.</p>
+                  <a class="btn btn-lg btn-primary rounded-pill" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/animals.html" target="_blank">
                      <i class="bi bi-arrow-right"></i>
                   </a>
                </div>
@@ -228,11 +230,11 @@
             <div class="col-lg-4 col-md-6">
                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                   <div class="service-icon mb-4">
-                     <i class="fa fa-2x fa-pills text-white"></i>
+                     <i class="fa fa-2x fas fa-people-arrows text-white"></i>
                   </div>
-                  <h4 class="mb-3">Medicine & Pharmacy</h4>
-                  <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                  <a class="btn btn-lg btn-primary rounded-pill" href="">
+                  <h4 class="mb-3">Crowded Places</h4>
+                  <p class="m-0">Places filled with people are high risk because they can allow physical contact or flying droplets.</p>
+                  <a class="btn btn-lg btn-primary rounded-pill" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank">
                      <i class="bi bi-arrow-right"></i>
                   </a>
                </div>
@@ -240,11 +242,11 @@
             <div class="col-lg-4 col-md-6">
                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                   <div class="service-icon mb-4">
-                     <i class="fa fa-2x fa-microscope text-white"></i>
+                     <i class="fa fa-2x fas fa-tint text-white"></i>
                   </div>
-                  <h4 class="mb-3">Blood Testing</h4>
-                  <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                  <a class="btn btn-lg btn-primary rounded-pill" href="">
+                  <h4 class="mb-3">Droplet</h4>
+                  <p class="m-0">Droplets are liquid or water droplets that come out of the respiratory tract when someone coughs or sneezes. Droplets can also be released when talking, singing, or laughing.</p>
+                  <a class="btn btn-lg btn-primary rounded-pill" href="https://www.who.int/news-room/commentaries/detail/modes-of-transmission-of-virus-causing-covid-19-implications-for-ipc-precaution-recommendations" target="_blank">
                      <i class="bi bi-arrow-right"></i>
                   </a>
                </div>
@@ -252,11 +254,11 @@
          </div>
       </div>
    </div>
-   <!-- Services End -->
+   <!-- Spread End -->
 
 
    <!-- Appointment Start -->
-   <div class="container-fluid bg-primary my-5 py-5">
+   <!-- <div class="container-fluid bg-primary my-5 py-5">
       <div class="container py-5">
          <div class="row gx-5">
             <div class="col-lg-6 mb-5 mb-lg-0">
@@ -314,119 +316,120 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- Appointment End -->
 
 
-   <!-- Pricing Plan Start -->
+   <!-- Prevention Start -->
    <div class="container-fluid py-5">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Medical Packages</h5>
-            <h1 class="display-4">Awesome Medical Programs</h1>
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Prevention</h5>
+            <h1 class="display-4">COVID-19 Prevention</h1>
          </div>
          <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
             <div class="bg-light rounded text-center">
                <div class="position-relative">
-                  <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
+                  <img class="img-fluid img-prevention rounded-top" src="img/hand-wash.png" alt="">
                   <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                     <h3 class="text-white">Pregnancy Care</h3>
-                     <h1 class="display-4 text-white mb-0">
+                     <h3 class="text-white">Hand Wash</h3>
+                     <!-- <h1 class="display-4 text-white mb-0">
                         <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                     </h1>
+                     </h1> -->
                   </div>
                </div>
-               <div class="text-center py-5">
-                  <p>Emergency Medical Treatment</p>
-                  <p>Highly Experienced Doctors</p>
+               <div class="text-center px-5 py-5">
+                  <p>Make it a habit to clean your hands with a hand sanitizer or wash your hands with soap after touching anything.It is also one of the easiest and cheapest measures.</p>
+                  <!-- <p>Highly Experienced Doctors</p>
                   <p>Highest Success Rate</p>
-                  <p>Telephone Service</p>
-                  <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                  <p>Telephone Service</p> -->
+                  <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 my-2"><i class="fas fa-external-link-alt"></i></a>
                </div>
             </div>
             <div class="bg-light rounded text-center">
                <div class="position-relative">
-                  <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
+                  <img class="img-fluid img-prevention rounded-top" src="img/keep-distance.png" alt="">
                   <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                     <h3 class="text-white">Health Checkup</h3>
-                     <h1 class="display-4 text-white mb-0">
+                     <h3 class="text-white">Keeping your distance</h3>
+                     <!-- <h1 class="display-4 text-white mb-0">
                         <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                     </h1>
+                     </h1> -->
                   </div>
                </div>
-               <div class="text-center py-5">
-                  <p>Emergency Medical Treatment</p>
-                  <p>Highly Experienced Doctors</p>
+               <div class="text-center px-5 py-5">
+                  <p>Keep a distance of 1 to 3 meters from people who indicate COVID-19 symptoms such as coughing or sneezing, and always wear a mask when doing activities in public places</p>
+                  <!-- <p>Highly Experienced Doctors</p>
                   <p>Highest Success Rate</p>
-                  <p>Telephone Service</p>
-                  <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                  <p>Telephone Service</p> -->
+                  <a href="https://www.healthychildren.org/English/health-issues/conditions/COVID-19/Pages/Social-Distancing-Why-Keeping-Your-Distance-Helps-Keep-Others-Safe.aspx" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 my-2"><i class="fas fa-external-link-alt"></i></a>
                </div>
             </div>
             <div class="bg-light rounded text-center">
                <div class="position-relative">
-                  <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
+                  <img class="img-fluid img-prevention rounded-top" src="img/dont-touch.png" alt="">
                   <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                     <h3 class="text-white">Dental Care</h3>
-                     <h1 class="display-4 text-white mb-0">
+                     <h3 class="text-white">Don't Touch Your Face</h3>
+                     <!-- <h1 class="display-4 text-white mb-0">
                         <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                     </h1>
+                     </h1> -->
                   </div>
                </div>
-               <div class="text-center py-5">
-                  <p>Emergency Medical Treatment</p>
-                  <p>Highly Experienced Doctors</p>
+               <div class="text-center px-5 py-5">
+                  <p>Hands that touch the face can increase a person's exposure to the COVID-19 virus. Therefore, make it a habit not to touch your face if you have not washed your hands</p>
+                  <!-- <p>Highly Experienced Doctors</p>
                   <p>Highest Success Rate</p>
-                  <p>Telephone Service</p>
-                  <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                  <p>Telephone Service</p> -->
+                  <a href="https://apic.org/monthly_alerts/dont-touch-your-face/" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 my-2"><i class="fas fa-external-link-alt"></i></a>
                </div>
             </div>
             <div class="bg-light rounded text-center">
                <div class="position-relative">
-                  <img class="img-fluid rounded-top" src="img/price-4.jpg" alt="">
+                  <img class="img-fluid img-prevention rounded-top" src="img/stay-at-home.png" alt="">
                   <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                     <h3 class="text-white">Operation & Surgery</h3>
-                     <h1 class="display-4 text-white mb-0">
+                     <h3 class="text-white">Staying at Home</h3>
+                     <!-- <h1 class="display-4 text-white mb-0">
                         <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>199<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                     </h1>
+                     </h1> -->
                   </div>
                </div>
-               <div class="text-center py-5">
-                  <p>Emergency Medical Treatment</p>
-                  <p>Highly Experienced Doctors</p>
+               <div class="text-center px-5 py-5">
+                  <p>If we feel unwell, we should stay at home instead of going out because an unhealthy body is very vulnerable to the COVID-19 virus so it is very dangerous.</p>
+                  <!-- <p>Highly Experienced Doctors</p>
                   <p>Highest Success Rate</p>
-                  <p>Telephone Service</p>
-                  <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                  <p>Telephone Service</p> -->
+                  <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 my-2"><i class="fas fa-external-link-alt"></i></a>
                </div>
             </div>
          </div>
       </div>
    </div>
-   <!-- Pricing Plan End -->
+   <!-- Prevention End -->
 
 
    <!-- Team Start -->
    <div class="container-fluid py-5">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Doctors</h5>
-            <h1 class="display-4">Qualified Healthcare Professionals</h1>
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Team</h5>
+            <h1 class="display-4">Group 4 Member</h1>
          </div>
          <div class="owl-carousel team-carousel position-relative">
             <div class="team-item">
                <div class="row g-0 bg-light rounded overflow-hidden">
                   <div class="col-12 col-sm-5 h-100">
-                     <img class="img-fluid h-100" src="img/team-1.jpg" style="object-fit: cover;">
+                     <img class="img-fluid h-100" src="img/nehemia.jpg" style="object-fit: cover;">
                   </div>
                   <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                      <div class="mt-auto p-4">
-                        <h3>Doctor Name</h3>
-                        <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                        <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                        <h3>Nehemia Gueldi</h3>
+                        <h6 class="fw-normal fst-italic text-primary mb-4">Informatics Student</h6>
+                        <!-- <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p> -->
                      </div>
                      <div class="d-flex mt-auto border-top p-4">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="https://twitter.com/GueldiNehemia" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="https://www.facebook.com/nehemia.gueldigunawan.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.linkedin.com/in/nehemiagueldi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="https://www.instagram.com/nehemiagueldi/" target="_blank"><i class="fab fa-instagram"></i></a>
                      </div>
                   </div>
                </div>
@@ -434,18 +437,19 @@
             <div class="team-item">
                <div class="row g-0 bg-light rounded overflow-hidden">
                   <div class="col-12 col-sm-5 h-100">
-                     <img class="img-fluid h-100" src="img/team-2.jpg" style="object-fit: cover;">
+                     <img class="img-fluid h-100" src="img/charlie.jpg" style="object-fit: cover;">
                   </div>
                   <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                      <div class="mt-auto p-4">
-                        <h3>Doctor Name</h3>
-                        <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                        <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                        <h3>Charlie Frederico</h3>
+                        <h6 class="fw-normal fst-italic text-primary mb-4">Informatics Student</h6>
+                        <!-- <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p> -->
                      </div>
                      <div class="d-flex mt-auto border-top p-4">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="https://twitter.com/Charlie14873803" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="https://www.facebook.com/charlie.frederico.10" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.linkedin.com/in/charlie-frederico-744345209/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="https://www.instagram.com/charliefrederico/" target="_blank"><i class="fab fa-instagram"></i></a>
                      </div>
                   </div>
                </div>
@@ -457,14 +461,55 @@
                   </div>
                   <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                      <div class="mt-auto p-4">
-                        <h3>Doctor Name</h3>
-                        <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                        <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                        <h3>Henry Laufrans</h3>
+                        <h6 class="fw-normal fst-italic text-primary mb-4">Informatics Student</h6>
+                        <!-- <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p> -->
                      </div>
                      <div class="d-flex mt-auto border-top p-4">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="team-item">
+               <div class="row g-0 bg-light rounded overflow-hidden">
+                  <div class="col-12 col-sm-5 h-100">
+                     <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                  </div>
+                  <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                     <div class="mt-auto p-4">
+                        <h3>Nabil Rakha Dwitya</h3>
+                        <h6 class="fw-normal fst-italic text-primary mb-4">Informatics Student</h6>
+                        <!-- <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p> -->
+                     </div>
+                     <div class="d-flex mt-auto border-top p-4">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="team-item">
+               <div class="row g-0 bg-light rounded overflow-hidden">
+                  <div class="col-12 col-sm-5 h-100">
+                     <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                  </div>
+                  <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                     <div class="mt-auto p-4">
+                        <h3>Yonas Kurnia Wijaya</h3>
+                        <h6 class="fw-normal fst-italic text-primary mb-4">Informatics Student</h6>
+                        <!-- <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p> -->
+                     </div>
+                     <div class="d-flex mt-auto border-top p-4">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                      </div>
                   </div>
                </div>
@@ -476,7 +521,7 @@
 
 
    <!-- Search Start -->
-   <div class="container-fluid bg-primary my-5 py-5">
+   <!-- <div class="container-fluid bg-primary my-5 py-5">
       <div class="container py-5">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
@@ -496,12 +541,12 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- Search End -->
 
 
    <!-- Testimonial Start -->
-   <div class="container-fluid py-5">
+   <!-- <div class="container-fluid py-5">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Testimonial</h5>
@@ -550,7 +595,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- Testimonial End -->
 
 
@@ -566,11 +611,10 @@
                <div class="bg-light rounded overflow-hidden">
                   <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
                   <div class="p-4">
-                     <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo diam</a>
-                     <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                        rebum clita rebum dolor stet amet justo</p>
+                     <a class="h3 d-block mb-3" href="https://www.medicalnewstoday.com/articles/treating-obesity-with-culinary-medicine-could-it-be-a-solution" target="_blank">Treating obesity with culinary medicine, Could it be a solution?</a>
+                     <p class="m-0">Obesity is a risk factor for many health conditions. Many factors lead to weight gain, including the increased availability of calorie-dense foods.</p>
                   </div>
-                  <div class="d-flex justify-content-between border-top p-4">
+                  <!-- <div class="d-flex justify-content-between border-top p-4">
                      <div class="d-flex align-items-center">
                         <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
                         <small>John Doe</small>
@@ -579,18 +623,17 @@
                         <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
                         <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
             <div class="col-xl-4 col-lg-6">
                <div class="bg-light rounded overflow-hidden">
                   <img class="img-fluid w-100" src="img/blog-2.jpg" alt="">
                   <div class="p-4">
-                     <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo diam</a>
-                     <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                        rebum clita rebum dolor stet amet justo</p>
+                     <a class="h3 d-block mb-3" href="https://www.medicalnewstoday.com/articles/what-is-cultural-competency-and-why-is-it-crucial-to-healthcare" target="_blank">What is cultural competency and why is it crucial to healthcare?</a>
+                     <p class="m-0">A recent survey among physicians in the United States shows that cultural competency is a key issue both for healthcare practitioners and their patients</p>
                   </div>
-                  <div class="d-flex justify-content-between border-top p-4">
+                  <!-- <div class="d-flex justify-content-between border-top p-4">
                      <div class="d-flex align-items-center">
                         <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
                         <small>John Doe</small>
@@ -599,18 +642,17 @@
                         <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
                         <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
             <div class="col-xl-4 col-lg-6">
                <div class="bg-light rounded overflow-hidden">
                   <img class="img-fluid w-100" src="img/blog-3.jpg" alt="">
                   <div class="p-4">
-                     <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo diam</a>
-                     <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                        rebum clita rebum dolor stet amet justo</p>
+                     <a class="h3 d-block mb-3" href="https://www.medicalnewstoday.com/articles/high-protein-breakfast-prevent-obesity-overeating-processed-foods#Protein-intakes-impact-on-overall-diet-" target="_blank">High protein breakfast may help prevent overeating and obesity</a>
+                     <p class="m-0">The researchers noted that as protein intake decreased, energy from fat, carbohydrates, sugars, and alcohol increased in what is known as “protein dilution.”</p>
                   </div>
-                  <div class="d-flex justify-content-between border-top p-4">
+                  <!-- <div class="d-flex justify-content-between border-top p-4">
                      <div class="d-flex align-items-center">
                         <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
                         <small>John Doe</small>
@@ -619,7 +661,7 @@
                         <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
                         <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
          </div>
@@ -629,7 +671,7 @@
 
 
    <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-light mt-5 py-5">
+   <!-- <div class="container-fluid bg-dark text-light mt-5 py-5">
       <div class="container py-5">
          <div class="row g-5">
             <div class="col-lg-3 col-md-6">
@@ -669,7 +711,7 @@
                      <button class="btn btn-primary">Sign Up</button>
                   </div>
                </form>
-               <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
+               <h6 class="text-primary text-uppercase mb-3">Follow Us</h6>
                <div class="d-flex">
                   <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
                   <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -679,16 +721,16 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <div class="container-fluid bg-dark text-light border-top border-secondary py-4">
       <div class="container">
          <div class="row g-5">
             <div class="col-md-6 text-center text-md-start">
-               <p class="mb-md-0">&copy; <a class="text-primary" href="#">Your Site Name</a>. All Rights Reserved.</p>
+               <p class="mb-md-0">&copy; <a class="text-primary" href="#">DICO-4</a>. All Rights Reserved.</p>
             </div>
-            <div class="col-md-6 text-center text-md-end">
+            <!-- <div class="col-md-6 text-center text-md-end">
                <p class="mb-0">Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a></p>
-            </div>
+            </div> -->
          </div>
       </div>
    </div>
