@@ -80,8 +80,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
             <a href="home.php" class="nav-item nav-link">Home</a>
-            <a href="" class="nav-item nav-link active">About Us</a>
-            <a href="home.php" class="nav-item nav-link">Covid-19 Diagnosis</a>
+            <a href="aboutus.php" class="nav-item nav-link active">About Us</a>
+            <a href="pil_gejala.php" class="nav-item nav-link">Covid-19 Diagnosis</a>
             <!-- <a href="" class="nav-item nav-link">Service</a>
                   <a href="" class="nav-item nav-link">Pricing</a> -->
             <!-- <div class="nav-item dropdown">
