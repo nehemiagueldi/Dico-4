@@ -140,25 +140,25 @@
           <div class="row g-3 pt-3">
             <div class="col-sm-3 col-6">
               <div class="bg-light text-center rounded-circle py-4">
-                <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
+                <i class="fa fa-3x fa-user-md text-primary mb-3 logo-about"></i>
                 <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
               </div>
             </div>
             <div class="col-sm-3 col-6">
               <div class="bg-light text-center rounded-circle py-4">
-                <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
+                <i class="fa fa-3x fa-procedures text-primary mb-3 logo-about"></i>
                 <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
               </div>
             </div>
             <div class="col-sm-3 col-6">
               <div class="bg-light text-center rounded-circle py-4">
-                <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
+                <i class="fa fa-3x fa-microscope text-primary mb-3 logo-about"></i>
                 <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
               </div>
             </div>
             <div class="col-sm-3 col-6">
               <div class="bg-light text-center rounded-circle py-4">
-                <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
+                <i class="fa fa-3x fa-ambulance text-primary mb-3 logo-about"></i>
                 <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
               </div>
             </div>

@@ -3,9 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap.min.js"></script>
-    <title>DIAGNOSA COVID-19</title>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script> -->
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <title>DICO-4</title>
   </head>
   <body>
 
@@ -21,8 +43,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
             <a href="home.php" class="nav-item nav-link">Home</a>
-            <a href="aboutus.php" class="nav-item nav-link active">About Us</a>
-            <a href="pil_gejala.php" class="nav-item nav-link">Covid-19 Diagnosis</a>
+            <a href="aboutus.php" class="nav-item nav-link">About Us</a>
+            <a href="pil_gejala.php" class="nav-item nav-link active">Covid-19 Diagnosis</a>
             <!-- <a href="" class="nav-item nav-link">Service</a>
                   <a href="" class="nav-item nav-link">Pricing</a> -->
             <!-- <div class="nav-item dropdown">
@@ -67,7 +89,7 @@
 	}
 	?>
 </div>
-	<input type="submit" class="btn btn-primary btn-lg btn-block" name="submit" value="submit">
+	<input type="submit" class="btn btn-primary btn-lg btn-block" name="submit" value="Submit">
 </form>
 </center>
 
