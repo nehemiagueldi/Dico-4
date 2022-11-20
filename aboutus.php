@@ -457,7 +457,7 @@
         <div class="team-item">
           <div class="row g-0 bg-light rounded overflow-hidden">
             <div class="col-12 col-sm-5 h-100">
-              <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+              <img class="img-fluid h-100" src="img/team-1.jpg" style="object-fit: cover;">
             </div>
             <div class="col-12 col-sm-7 h-100 d-flex flex-column">
               <div class="mt-auto p-4">
@@ -466,10 +466,10 @@
                 <!-- <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p> -->
               </div>
               <div class="d-flex mt-auto border-top p-4">
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="https://instagram.com/henrylaufrans" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="https://www.linkedin.com/in/henry-laufrans-006542202" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.linkedin.com/in/henry-laufrans-006542202" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="https://instagram.com/henrylaufrans" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -477,7 +477,7 @@
         <div class="team-item">
           <div class="row g-0 bg-light rounded overflow-hidden">
             <div class="col-12 col-sm-5 h-100">
-              <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+              <img class="img-fluid h-100" src="img/team-2.jpg" style="object-fit: cover;">
             </div>
             <div class="col-12 col-sm-7 h-100 d-flex flex-column">
               <div class="mt-auto p-4">
@@ -487,9 +487,9 @@
               </div>
               <div class="d-flex mt-auto border-top p-4">
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="https://www.facebook.com/nabilrakha.dwitya.9/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.linkedin.com/in/nabil-rakha-469499244/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle ms-3" href="https://www.instagram.com/nabilrakha22/?hl=id" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -497,7 +497,7 @@
         <div class="team-item">
           <div class="row g-0 bg-light rounded overflow-hidden">
             <div class="col-12 col-sm-5 h-100">
-              <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+              <img class="img-fluid h-100" src="img/team-1.jpg" style="object-fit: cover;">
             </div>
             <div class="col-12 col-sm-7 h-100 d-flex flex-column">
               <div class="mt-auto p-4">
