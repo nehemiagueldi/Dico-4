@@ -26,6 +26,9 @@
   <!-- Customized Bootstrap Stylesheet -->
   <link href="bootstrap.min.css" rel="stylesheet">
 
+  <!-- Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Template Stylesheet -->
   <link href="style.css" rel="stylesheet">
 </head>
@@ -123,7 +126,7 @@
 
 
   <!-- About Start -->
-  <div class="container-fluid py-5">
+  <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="3000">
     <div class="container">
       <div class="row gx-5">
         <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
@@ -407,7 +410,7 @@
 
 
   <!-- Team Start -->
-  <div class="container-fluid py-5">
+  <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="3000">
     <div class="container">
       <div class="text-center mx-auto mb-5" style="max-width: 500px;">
         <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Team</h5>
@@ -733,6 +736,13 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init({
+        once: true,
+        offset: 325
+      });
+  </script>
 </body>
 
 </html>
