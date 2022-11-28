@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tb_gejala` (
-  `id` int(5) NOT NULL,
-  `kode` varchar(5) NOT NULL,
+  `id` int(8) NOT NULL,
+  `kode` varchar(8) NOT NULL,
   `gejala` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -39,12 +39,14 @@ CREATE TABLE `tb_gejala` (
 --
 
 INSERT INTO `tb_gejala` (`id`, `kode`, `gejala`) VALUES
-(1, 'G001', 'Demam Dan Flu'),
-(2, 'G002', 'Batuk'),
-(3, 'G003', 'Bersin'),
-(4, 'G004', 'Kehilangan Rasa dan Bau'),
-(5, 'G005', 'Pilek'),
-(6, 'G006', 'Sesak Nafas');
+(1, 'G001', 'Demam'),
+(2, 'G002', 'Pilek'),
+(3, 'G003', 'Batuk (dengan & tanpa dahak)'),
+(4, 'G004', 'Lemas'),
+(5, 'G005', 'Kehilangan Rasa dan Bau'),
+(6, 'G006', 'Sakit tenggorokan'),
+(7, 'G007', 'Sesak Nafas'),
+(8, 'G008', 'Sakit Kepala');
 
 -- --------------------------------------------------------
 
@@ -53,8 +55,8 @@ INSERT INTO `tb_gejala` (`id`, `kode`, `gejala`) VALUES
 --
 
 CREATE TABLE `tb_penyakit` (
-  `id` int(5) NOT NULL,
-  `penyakit` varchar(50) DEFAULT NULL,
+  `id` int(8) NOT NULL,
+  `penyakit` varchar(200) DEFAULT NULL,
   `definisi` longtext NOT NULL,
   `penyebab` longtext NOT NULL,
   `pengendalian_teknis` varchar(200) NOT NULL,
@@ -66,17 +68,42 @@ CREATE TABLE `tb_penyakit` (
 --
 
 INSERT INTO `tb_penyakit` (`id`, `penyakit`, `definisi`, `penyebab`, `pengendalian_teknis`, `pengendalian_kimia`) VALUES
-(1, 'COVID-19', 'Memiliki 4 Jenis sekaligus yang terdifinisi COVID-19', 'virus COVID-19', 'SEGERA KE RUMAH SAKIT', '-'),
-(2, 'Bukan Covid', 'Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
-(3, 'Batuk', 'Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
-(4, 'Bersin', 'Bukan Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
-(5, 'Kehilangan Rasa dan Bau', 'Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
-(6, 'Pilek', 'Bukan Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
-(7, 'Sesak Nafas', 'Ciri - Ciri COVID-19', 'Paru - Paru', 'Segera ke Klinik dan membeli Obat', '-'),
-(8, 'Kemungkinan COVID-19', 'Memiliki 3 Jenis sekaligus yang terdifinisi COVID-19', 'virus COVID-19', 'SEGERA KE RUMAH SAKIT', '-'),
-(9, 'Bukan Covid', 'Memiliki 1 Jenis sekaligus yang terdifinisi COVID-19', 'virus', 'Segera ke klinik untuk membeli obat', '-'),
-(10, 'Batuk', 'Memiliki 1 Jenis sekaligus yang terdifinisi COVID-19', 'virus', 'Segera ke klinik untuk membeli obat', '-'),
-(11, 'Kehilangan Rasa dan Bau', 'Memiliki 1 Jenis sekaligus yang terdifinisi COVID-19', 'virus', 'Segera ke klinik untuk membeli obat', '-');
+-- (1, 'COVID-19', 'Memiliki 4 Jenis sekaligus yang terdifinisi COVID-19', 'virus COVID-19', 'SEGERA KE RUMAH SAKIT', '-'),
+-- (2, 'Bukan Covid', 'Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
+-- (3, 'Batuk', 'Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
+-- (4, 'Bersin', 'Bukan Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
+-- (5, 'Kehilangan Rasa dan Bau', 'Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
+-- (6, 'Pilek', 'Bukan Ciri - Ciri COVID-19', 'Virus', 'Segera ke Klinik dan membeli Obat', '-'),
+-- (7, 'Sesak Nafas', 'Ciri - Ciri COVID-19', 'Paru - Paru', 'Segera ke Klinik dan membeli Obat', '-'),
+-- (8, 'Kemungkinan COVID-19', 'Memiliki 3 Jenis sekaligus yang terdifinisi COVID-19', 'virus COVID-19', 'SEGERA KE RUMAH SAKIT', '-'),
+-- (9, 'Bukan Covid', 'Memiliki 1 Jenis sekaligus yang terdifinisi COVID-19', 'virus', 'Segera ke klinik untuk membeli obat', '-'),
+-- (10, 'Batuk', 'Memiliki 1 Jenis sekaligus yang terdifinisi COVID-19', 'virus', 'Segera ke klinik untuk membeli obat', '-'),
+-- (11, 'Kehilangan Rasa dan Bau', 'Memiliki 1 Jenis sekaligus yang terdifinisi COVID-19', 'virus', 'Segera ke klinik untuk membeli obat', '-');
+(1, 'Demam', 'Bukan Covid-19 jika yang dirasakan hanya demam (diatas 37°C)',' Infeksi dalam tubuh (bakteri / virus), kelelahan', 'Istirahat, minum obat demam', '-'),
+(2, 'Flu', 'Bukan Covid-19. Jika hanya Pilek (hidung tersumbat) merupakan salah satu gejala utama penyakit Flu',' Udara dingin, udara kotor, virus influenza', 'Istirahat, minum obat flu, kompress', '-'),
+(3, 'Batuk', 'Bukan Covid-19 jika hanya Batuk',' Radang tenggorokan, panas dalam, infeksi tenggorokan, bakteri', 'Istirahat, minum obat batuk, minum air hangat', '-'),
+(4, 'Kelelahan', 'Bukan Covid-19 jika hanya lelah',' Kelelahan', 'Istirahat, minum air', '-'),
+(5, 'Flu', 'Bukan Covid-19 jika hanya kehilangan bau',' Virus influenza, penciuman terganggu', 'Istirahat, minum obat flu', '-'),
+(6, 'Panas Dalam', 'Bukan Covid-19 jika hanya sakit tenggorokan',' Kurang minum air, infeksi tenggorokan, makan berminyak', 'Larutan penyegar', '-'),
+(7, 'Sakit Kepala', 'Bukan Covid-19 jika hanya sakit kepala',' Stress, kurang tidur, pemicu saraf tak lazim', 'Minum obat sakit kepala, istirahat', '-'),
+(8, 'Flu', 'Bukan Covid-19. Demam dan pilek merupakan gejala utama flu',' Virus influenza', 'Istirahat, minum obat flu', '-'),
+(9, 'Kemungkinan Covid', '3 gejala yang berbeda, kemungkinan Covid-19.',' Infeksi virus dan bakteri', 'Jika gejala bertambah, harap melakukan antigen', '-'),
+(10, 'Batuk Pilek', 'Bukan Covid-19. Batuk dan pilek merupakan penyakit wajar',' Infeksi bakteri dan penyakit', 'Minum obat batuk dan pilek', '-'),
+(11, 'Kemungkinan Covid', '3 gejala yang berbeda, kemungkinan Covid-19',' Kelelahan, virus / bakteri', 'Istirahat, minum obat flu, vitamin, dan larutan penyegar', '-'),
+(12, 'Covid-19', '4 Gejala yang berbeda, demam + Kehilangan rasa bau, gejala Covid-19',' Virus covid 19', 'Minum antivirus, vitamin, dan antibiotik', '-'),
+(13, 'Covid-19', 'Demam, pilek, dan kehilangan indra penciuman, gejala utama covid-19',' Virus covid 19', 'Minum antivirus, vitamin, dan antibiotik', '-'),
+(14, 'Kemungkinan Covid', 'Gejala demam dan kehilangan penciuman merupakan ',' Virus, bakteri, jamur', 'Kompres, minum obat dan vitamin', '-'),
+(15, 'Panas dalam', 'Bukan Covid-19 jika hanya batuk dan sakit tenggorokan.',' Radang tenggorokan, panas dalam, infeksi tenggorokan, bakteri', 'Istirahat, minum obat batuk, minum air hangat', '-'),
+(16, 'Panas Dalam', 'Bukan Covid-19. Gejala yang dialami merupakan gejala utama panas dalam.',' Radang tenggorokan, panas dalam, infeksi tenggorokan, bakteri', 'Istirahat, minum obat batuk, minum air hangat', '-'),
+(17, 'Flu', 'Bukan covid-19. Kehilangan Indra penciuman dan pilek merupakan gejala utama Influenza.',' Infeksi virus dan bakteri', 'Istirahat, minum obat flu', '-'),
+(18, 'Kemungkinan Covid-19', '2 gejala yang dirasakan merupakan gejala utama Covid-19.',' Infeksi bakteri dan virus', 'Minum obat batuk, air panas, dan istirahat', '-'),
+(19, 'Kemungkinan Covid-19', '2 gejala yang dirasakan merupakan gejala utama Covid-19.',' Infeksi bakteri dan virus', 'Istirahat yang cukup, minum vitamin, antibiotik', '-'),
+(20, 'Kemungkinan Covid-19', '2 gejala yang dirasakan merupakan gejala utama Covid-19.',' Infeksi / radang tenggorokan, kelelahan', 'Minum air panas, larutan penyegar, vitamin', '-'),
+(21, 'Covid-19', '4 gejala yang berbeda, Pilek + Lemas + Hilang penciuman + Sakit kepala',' Virus, bakteri, rendah imun', 'Minum antivirus, vitamin, dan antibiotik', '-'),
+(22, 'Covid-19', '4 gejala yang berbeda, Pilek + Lemas + Hilang penciuman + Sakit kepala',' Virus, bakteri, panas dalam', 'Minum antivirus, antibiotik, vitamin, dan istirahat cukuo', '-'),
+(23, 'Kemungkinan Covid-19', '3 Gejala berbeda, kehilangan rasa bau, sakit tenggorokan dan sakit kepala',' Migrain, stress, virus', 'Minum obat, vitamin, dan istirahat cukup', '-'),
+(24, 'Kemungkinan Covid-19', '3 gejala berbeda. Lemas, kehilangan penciuman dan sakit kepala',' Stress, panas dalam, virus flu', 'Minum vitamin, obat flu, dan minum air hangat', '-'),
+(25, 'Kemungkinan Covid-19', '4 Gejala berbeda, pilek, batuk, kehilangan dan penciuman merupakan gejala utama Covid-19',' Virus, bakteri, jamur', 'Istirahat yang cukup, minum vitamin, antibiotik', '-');
 
 -- --------------------------------------------------------
 
@@ -85,7 +112,7 @@ INSERT INTO `tb_penyakit` (`id`, `penyakit`, `definisi`, `penyebab`, `pengendali
 --
 
 CREATE TABLE `tb_rule` (
-  `id` int(5) NOT NULL,
+  `id` int(35) NOT NULL,
   `G001` tinyint(1) DEFAULT NULL,
   `G002` tinyint(1) DEFAULT NULL,
   `G003` tinyint(1) DEFAULT NULL,
@@ -128,17 +155,32 @@ CREATE TABLE `tb_rule` (
 --
 
 INSERT INTO `tb_rule` (`id`, `G001`, `G002`, `G003`, `G004`, `G005`, `G006`, `G007`, `G008`, `G009`, `G010`, `G011`, `G012`, `G013`, `G014`, `G015`, `G016`, `G017`, `G018`, `G019`, `G020`, `G021`, `G022`, `G023`, `G024`, `G025`, `G026`, `G027`, `G028`, `G029`, `G030`, `G031`, `G032`, `G033`, `G034`, `G035`) VALUES
-(1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(4, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(5, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(6, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(7, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(8, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(9, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(10, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(11, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+(1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(3, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(6, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(7, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(8, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(9, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(10, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(11, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(12, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(13, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(14, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(16, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(17, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(18, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(19, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(20, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(21, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(22, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(23, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(24, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(25, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
 
 --
 -- Indexes for dumped tables
@@ -170,13 +212,13 @@ ALTER TABLE `tb_rule`
 -- AUTO_INCREMENT untuk tabel `tb_gejala`
 --
 ALTER TABLE `tb_gejala`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_rule`
 --
 ALTER TABLE `tb_rule`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(35) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
