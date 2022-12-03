@@ -111,10 +111,10 @@
    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
       <div class="container py-5">
          <div class="row justify-content-start">
-            <div class="col-lg-8 text-center text-lg-start" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
-               <h5 class="d-inline-block text-black-50 text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .5) !important;" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">Welcome To DICO-4</h5>
-               <h1 class="display-1 text-white mb-md-4" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">Together We Fight COVID-19</h1>
-               <div class="pt-2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
+            <div class="col-lg-8 text-center text-lg-start" data-aos-anchor-placement="bottom-bottom">
+               <h5 class="d-inline-block text-black-50 text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .5) !important;" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">Welcome To DICO-4</h5>
+               <h1 class="display-1 text-white mb-md-4" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">Together We Fight COVID-19</h1>
+               <div class="pt-2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <a href="aboutus.php" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">About Us</a>
                   <a href="pil_gejala.php" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Covid-19 Diagnosis</a>
                </div>
@@ -130,11 +130,11 @@
       <div class="container">
          <div class="row gx-5">
             <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
-               <div class="position-relative h-100" data-aos="fade-right" data-aos-duration="3000">
+               <div class="position-relative h-100" data-aos="fade-right">
                   <img class="position-absolute w-100 h-100 rounded img-about" src="img/about.jpg" style="object-fit: cover;">
                </div>
             </div>
-            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="3000">
+            <div class="col-lg-7" data-aos="fade-left">
                <div class="mb-4">
                   <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
                   <h1 class="display-4">About COVID-19 and The Spread</h1>
@@ -174,7 +174,7 @@
 
 
    <!-- Spread Start -->
-   <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="3000">
+   <div class="container-fluid py-5" data-aos="fade-up">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">The Spread</h5>
@@ -324,7 +324,7 @@
 
 
    <!-- Prevention Start -->
-   <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="3000">
+   <div class="container-fluid py-5" data-aos="fade-up">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Prevention</h5>
@@ -410,7 +410,7 @@
 
 
    <!-- Team Start -->
-   <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="3000">
+   <div class="container-fluid py-5" data-aos="fade-up">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Team</h5>
@@ -583,7 +583,7 @@
 
 
    <!-- Blog Start -->
-   <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="3000">
+   <div class="container-fluid py-5" data-aos="fade-up">
       <div class="container">
          <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Blog Post</h5>
@@ -741,7 +741,8 @@
    <script>
       AOS.init({
          once: true,
-         offset: 325
+         offset: 325,
+         duration: 1800
       });
    </script>
 </body>

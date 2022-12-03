@@ -70,7 +70,7 @@
 
 <?php include 'koneksi.php';?>
 <center>
-  <h1 style="text-align: center;" data-aos="fade-up" data-aos-duration="3000">Memilih Gejala</h1>
+  <h1 style="text-align: center;" data-aos="fade-up">Memilih Gejala</h1>
   <form class="col-6" method="POST" action="proses.php">
   <div>
   <?php
@@ -80,7 +80,7 @@
     //agar berlaku berulangan sebanyak data yg ada di tb_gejala
     while ($d=mysqli_fetch_array($data)) {
     ?>
-    <div class="input-group mb-3" data-aos="fade-up" data-aos-duration="3000">
+    <div class="input-group mb-3" data-aos="fade-up">
         <div class="input-group-prepend">
           <div class="input-group-text">
               <input type="checkbox" class="input-group-text" aria-label="Checkbox for following text input" value="<?=$d['kode']?>" name="<?=$d['id']?>">
@@ -93,7 +93,7 @@
     }
     ?>
   </div>
-    <input type="submit" class="btn btn-primary btn-lg btn-block mb-3" data-aos="fade-up" data-aos-duration="3000" name="submit" value="Submit">
+    <input type="submit" class="btn btn-primary btn-lg btn-block mb-3" data-aos="fade-up" name="submit" value="Submit">
   </form>
 </center>
 
@@ -113,6 +113,7 @@
   <script>
       AOS.init({
         once: true,
+        duration: 1800
       });
   </script>
 </body>
