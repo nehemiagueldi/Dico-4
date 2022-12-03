@@ -158,6 +158,15 @@
   cursor: pointer;
 }
 
+.img-about{
+  transition: .3s;
+}
+
+.img-about:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .price-carousel::after {
   position: absolute;
   content: "";
