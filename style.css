@@ -274,3 +274,9 @@
   width: 150px;
   height: 150px;
 }
+
+@media print {
+  .noPrint{
+    display:none;
+  }
+}

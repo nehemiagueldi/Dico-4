@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
-	<link href="style.css" rel="stylesheet">
-    <script src="bootstrap.min.js"></script>
-    <title>DIAGNOSA COVID-19</title>
+    <title>DICO-4</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Template Stylesheet -->  
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-
-  <div class="container-fluid sticky-top bg-white shadow-sm">
+  <!-- Navbar Start -->
+	<div class="container-fluid sticky-top bg-white shadow-sm">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-        <a href="" class="navbar-brand">
+        <a href="home.php" class="navbar-brand">
           <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>DICO-4</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -22,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
             <a href="home.php" class="nav-item nav-link">Home</a>
-            <a href="aboutus.php" class="nav-item nav-link active">About Us</a>
+            <a href="aboutus.php" class="nav-item nav-link">About Us</a>
             <a href="pil_gejala.php" class="nav-item nav-link">Covid-19 Diagnosis</a>
             <!-- <a href="" class="nav-item nav-link">Service</a>
                   <a href="" class="nav-item nav-link">Pricing</a> -->
@@ -42,43 +64,48 @@
         </div>
       </nav>
     </div>
-  </div> 
+  </div>
+	<!-- Navbar End -->
 <br>
 <script>
 function myFunction() {
     window.print();
 }
 </script>
-<h1>Hasil Diagnosa</h1><br>
+<h1 style="text-align: center;">Hasil Diagnosa</h1><br>
 <div class="container">
-  <button style="float:right;" class="btn btn-success" onclick="myFunction()">CETAK</button>
+  <button style="float:right;" class="btn btn-success noPrint" onclick="myFunction()">PRINT</button>
 </div>
 <div class="container col-6">
 	<div class="input-group mb-3">
     	<div class="input-group-prepend">
-        	<span class="input-group-text"><h5>PENYAKIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></span>
+        	<span class="input-group-text"><h5 style="text-transform:uppercase;">Penyakit</h5></span>
     	</div>
-    	<textarea class="form-control" rows="1"readonly><?php echo "$penyakit"; ?></textarea>
+      	<!-- <input type="text" class="form-control" value="<?php echo $penyakit; ?>" readonly> -->
+    	  <textarea class="form-control" rows="1"readonly><?php echo "$penyakit"; ?></textarea>
   	</div>
 
 	<div class="input-group mb-3">
   		<div class="input-group-prepend">
-    		<span class="input-group-text"><h5>DEFINISI&nbsp;&nbsp;&nbsp;</h5></span>
+    		<span class="input-group-text"><h5 style="text-transform:uppercase;">Definisi&nbsp;&nbsp;</h5></span>
 	  	</div>
+      <!-- <input type="text" class="form-control" value="<?php echo $definisi; ?>" readonly> -->
 		<textarea class="form-control" rows="6"   readonly><?php echo "$definisi"; ?></textarea>
 	</div>
     
 	<div class="input-group mb-3">
   		<div class="input-group-prepend">
-    		<span class="input-group-text"><h5>PENYEBAB&nbsp;&nbsp;&nbsp;</h5></span>
+    		<span class="input-group-text"><h5 style="text-transform:uppercase;">Penyebab</h5></span>
 	  	</div>
+      <!-- <input type="text" class="form-control" value="<?php echo $penyebab; ?>" readonly> -->
 		<textarea class="form-control" rows="6"   readonly><?php echo "$penyebab"; ?></textarea>
 	</div>
 
 	<div class="input-group mb-3">
   		<div class="input-group-prepend">
-    		<span class="input-group-text"><h5>SARAN</h5></span>
+    		<span class="input-group-text"><h5 style="text-transform:uppercase;">Saran&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></span>
   		</div>
+      <!-- <input type="text" class="form-control" value="<?php echo $pengendalian_teknis; ?>" readonly> -->
 		<textarea class="form-control" rows="6"  readonly><?php echo "$pengendalian_teknis"; ?> </textarea>
 	</div>
     

@@ -24,6 +24,9 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="bootstrap.min.css" rel="stylesheet">
 
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Template Stylesheet -->
     <link href="style.css" rel="stylesheet">
 
@@ -34,7 +37,7 @@
   <div class="container-fluid sticky-top bg-white shadow-sm">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-        <a href="" class="navbar-brand">
+        <a href="home.php" class="navbar-brand">
           <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>DICO-4</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -67,8 +70,9 @@
 
 <?php include 'koneksi.php';?>
 <center>
+  <h1 style="text-align: center;" data-aos="fade-up" data-aos-duration="3000">Memilih Gejala</h1>
   <form class="col-6" method="POST" action="proses.php">
-  <div style="overflow: scroll; height: 467px;">
+  <div>
   <?php
   //cek db gejala
     $qry="select * from tb_gejala";
@@ -76,10 +80,10 @@
     //agar berlaku berulangan sebanyak data yg ada di tb_gejala
     while ($d=mysqli_fetch_array($data)) {
     ?>
-    <div class="input-group mb-3">
+    <div class="input-group mb-3" data-aos="fade-up" data-aos-duration="3000">
         <div class="input-group-prepend">
           <div class="input-group-text">
-              <input type="checkbox" aria-label="Checkbox for following text input" value="<?=$d['kode']?>" name="<?=$d['id']?>">
+              <input type="checkbox" class="input-group-text" aria-label="Checkbox for following text input" value="<?=$d['kode']?>" name="<?=$d['id']?>">
           </div>
         </div>
         <input type="text" class="form-control" aria-label="Text input with checkbox" value="<?=$d['gejala']?>"readonly>
@@ -89,7 +93,7 @@
     }
     ?>
   </div>
-    <input type="submit" class="btn btn-primary btn-lg btn-block" name="submit" value="Submit">
+    <input type="submit" class="btn btn-primary btn-lg btn-block mb-3" data-aos="fade-up" data-aos-duration="3000" name="submit" value="Submit">
   </form>
 </center>
 
@@ -105,3 +109,10 @@
       </div>
     </div>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init({
+        once: true,
+      });
+  </script>
+</body>
