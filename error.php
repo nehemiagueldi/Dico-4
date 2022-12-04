@@ -74,45 +74,45 @@ function myFunction() {
 }
 </script>
 <div class="title-error">
-  <h1 style="text-align: center;">Hasil Diagnosa</h1><br>
-  <h2 style="text-align: center;">Mungkin Anda tidak mengisi atau mencentang salah satu checkbox yang tersedia</h2><br>
-  <h2 style="text-align: center;">Klik tombol di bawah ini untuk kembali ke halaman Diagnosis Covid-19</h2><br>
+  <h3 style="text-align: center;">Hasil Diagnosa</h3><br>
+  <h3 style="text-align: center;">Mungkin Anda tidak mengisi atau mencentang salah satu checkbox yang tersedia</h3><br>
+  <h3 style="text-align: center;">Klik tombol di bawah ini untuk kembali ke halaman Diagnosis Covid-19</h3><br>
 </div>  
-<div class="container col-1 ">
+<div class="container col-1">
   <a href="pil_gejala.php"  class="btn btn-success">Covid-19 Diagnosis</a>  
 </div>
 
-<div class="container col-6">
-	<div class="input-group mb-4">
+<div class="container col-8">
+	<div class="input-group mb-3">
     	<div class="input-group-prepend">
         	<span class="input-group-text"><h5 style="text-transform:uppercase;">Penyakit&nbsp;&nbsp;</h5></span>
     	</div>
       	<!-- <input type="text" class="form-control" style="color: red;" value="Sorry data is not available ! " readonly> -->
-    	  <textarea class="form-control" rows="2"style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
+    	  <textarea class="form-control" rows="3"style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
   	</div>
 
-	<div class="input-group mb-4">
+	<div class="input-group mb-3">
   		<div class="input-group-prepend">
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Definisi&nbsp;&nbsp;&nbsp;&nbsp;</h5></span>
 	  	</div>
       <!-- <input type="text" class="form-control" style="color: red;" value="Sorry data is not available ! " readonly> -->
-		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
+		<textarea class="form-control" rows="3" style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
 	</div>
     
-	<div class="input-group mb-4">
+	<div class="input-group mb-3">
   		<div class="input-group-prepend">
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Penyebab</h5></span>
 	  	</div>
       <!-- <input type="text" class="form-control" style="color: red;" value="Sorry data is not available ! " readonly> -->
-		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia ! Penyebab belum diketahui atau gejala yang ditunjukkan bukan merupakan penyakit Covid-19.</textarea>
+		<textarea class="form-control" rows="5" style="color: red;" readonly>Maaf data tidak tersedia ! Penyebab belum diketahui atau gejala yang ditunjukkan bukan merupakan penyakit Covid-19.</textarea>
 	</div>
 
-	<div class="input-group mb-4">
+	<div class="input-group mb-3">
   		<div class="input-group-prepend">
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Saran&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></span>
   		</div>
       <!-- <input type="text" class="form-control" style="color: red;" value="Sorry data is not available ! " readonly> -->
-		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia ! Segera pergi menemui dokter untuk penanganan lebih lanjut atau silakan ulangin halaman sebelumnya dan masukkan gejala yang dialami dengan lebih terperinci.</textarea>
+		<textarea class="form-control" rows="5" style="color: red;" readonly>Maaf data tidak tersedia ! Segera pergi menemui dokter untuk penanganan lebih lanjut atau silakan ulangin halaman sebelumnya dan masukkan gejala yang dialami dengan lebih terperinci.</textarea>
 	</div>
     
   
