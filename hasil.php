@@ -71,11 +71,12 @@
 function myFunction() {
     window.print();
 }
+</script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   
-</script>
+
 <h1 style="text-align: center;">Hasil Diagnosa</h1><br>
 <div class="container">
   <button style="float:right;" class="btn btn-success noPrint" onclick="myFunction()">PRINT</button>
