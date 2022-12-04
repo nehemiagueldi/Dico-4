@@ -104,7 +104,7 @@ function myFunction() {
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Penyebab</h5></span>
 	  	</div>
       <!-- <input type="text" class="form-control" style="color: red;" value="Sorry data is not available ! " readonly> -->
-		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
+		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia ! Penyebab belum diketahui</textarea>
 	</div>
 
 	<div class="input-group mb-3">
@@ -112,7 +112,7 @@ function myFunction() {
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Saran&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></span>
   		</div>
       <!-- <input type="text" class="form-control" style="color: red;" value="Sorry data is not available ! " readonly> -->
-		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
+		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia ! Segera pergi menemui dokter untuk penanganan lebih lanjut. </textarea>
 	</div>
     
   
