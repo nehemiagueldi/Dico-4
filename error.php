@@ -83,7 +83,7 @@ function myFunction() {
 </div>
 
 <div class="container col-6">
-	<div class="input-group mb-3">
+	<div class="input-group mb-4">
     	<div class="input-group-prepend">
         	<span class="input-group-text"><h5 style="text-transform:uppercase;">Penyakit&nbsp;&nbsp;</h5></span>
     	</div>
@@ -91,7 +91,7 @@ function myFunction() {
     	  <textarea class="form-control" rows="2"style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
   	</div>
 
-	<div class="input-group mb-3">
+	<div class="input-group mb-4">
   		<div class="input-group-prepend">
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Definisi&nbsp;&nbsp;&nbsp;&nbsp;</h5></span>
 	  	</div>
@@ -99,7 +99,7 @@ function myFunction() {
 		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia !</textarea>
 	</div>
     
-	<div class="input-group mb-3">
+	<div class="input-group mb-4">
   		<div class="input-group-prepend">
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Penyebab</h5></span>
 	  	</div>
@@ -107,7 +107,7 @@ function myFunction() {
 		<textarea class="form-control" rows="2" style="color: red;" readonly>Maaf data tidak tersedia ! Penyebab belum diketahui atau gejala yang ditunjukkan bukan merupakan penyakit Covid-19.</textarea>
 	</div>
 
-	<div class="input-group mb-3">
+	<div class="input-group mb-4">
   		<div class="input-group-prepend">
     		<span class="input-group-text"><h5 style="text-transform:uppercase;">Saran&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></span>
   		</div>
